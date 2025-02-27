@@ -23,7 +23,7 @@ pipeline {
         stage("Build Image"){
             steps{
                 script{
-                    sh 'docker build -t shivsundar21/docker-test-app:3.0.0 .' // build docker image
+                    sh 'docker build -t shivsundar21/docker-test-app-copy:1.0.0 .' // build docker image
                 }
             }
         }
