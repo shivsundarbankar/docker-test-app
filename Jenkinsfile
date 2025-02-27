@@ -23,7 +23,7 @@
              stage("Build Image"){
                  steps{
                      script{
-                         sh 'docker build -t shivsundar21/docker-test-final-app:1.0.0 .' // build docker image
+                         sh 'docker build -t shivsundar21/docker-test-final-app:2.0.0 .' // build docker image
                      }
                  }
              }
@@ -31,7 +31,7 @@
              stage("Push to docker hub"){
                  steps{
                      withDockerRegistry(credentialsId: 'docker-hub-credentials', url: 'https://index.docker.io/v1/') {
-                      sh 'docker push shivsundar21/docker-test-final-app:1.0.0'
+                      sh 'docker push shivsundar21/docker-test-final-app:2.0.0'
                      }
                  }
              }

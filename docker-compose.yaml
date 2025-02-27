@@ -16,7 +16,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker-test-app:1.0.0
+    image: shivsundar21/docker-test-final-app:2.0.0
     depends_on:
       - mysql-db
     ports:
