@@ -31,7 +31,7 @@ pipeline {
         stage("Push to docker hub"){
             steps{
                 withDockerRegistry(credentialsId: 'docker-hub-credentials', url: 'https://index.docker.io/v1/') {
-                 sh 'docker push shivsundar21/docker-test-app:3.0.0'
+                 sh 'docker push shivsundar21/docker-test-app-copy:1.0.0'
                 }
             }
         }
